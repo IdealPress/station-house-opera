@@ -1,0 +1,11 @@
+.base {
+  @apply px-6 flex justify-between pb-6 text-lg items-center;
+}
+
+.base ul {
+  @apply space-x-6;
+}
+
+.base li {
+  @apply inline-block;
+}

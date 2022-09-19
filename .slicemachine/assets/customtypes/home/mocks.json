@@ -1,0 +1,65 @@
+{
+  "id": "mock-doc-id",
+  "url": null,
+  "type": "home",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
+  "data": {
+    "carousel": [
+      {
+        "image": {
+          "dimensions": {
+            "width": 2500,
+            "height": 1406
+          },
+          "alt": null,
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68"
+        }
+      }
+    ],
+    "announcements": [
+      {
+        "title": "consider",
+        "date": "saved",
+        "text": [
+          {
+            "type": "paragraph",
+            "text": "Amet eiusmod et eu ullamco. Consequat nulla cillum nisi aute elit Lorem fugiat culpa cupidatat. Eu ipsum culpa non voluptate irure nulla.",
+            "spans": []
+          }
+        ],
+        "image": {
+          "dimensions": {
+            "width": 2500,
+            "height": 1667
+          },
+          "alt": null,
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1586952518485-11b180e92764"
+        }
+      }
+    ],
+    "featured_projects": [
+      {
+        "project": {
+          "id": "mock_document_id",
+          "link_type": "Document",
+          "type": "project",
+          "tags": [],
+          "lang": "en-us",
+          "slug": null,
+          "first_publication_date": "1970-01-01T00:00:01+0000",
+          "last_publication_date": "1970-01-01T01:00:00+0000"
+        }
+      }
+    ],
+    "slices": []
+  }
+}

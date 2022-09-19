@@ -1,0 +1,28 @@
+{
+  "id": "lead_text",
+  "type": "SharedSlice",
+  "name": "LeadText",
+  "description": "LeadText",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "LeadText",
+      "primary": {
+        "text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Lead Text",
+            "placeholder": "Use for lead text on a page",
+            "allowTargetBlank": true,
+            "single": "paragraph,strong,em,hyperlink"
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

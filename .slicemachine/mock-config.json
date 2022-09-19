@@ -1,0 +1,52 @@
+{
+  "_cts": {
+    "project": {},
+    "home": {
+      "carousel": {},
+      "announcements": {
+        "text": {
+          "config": {
+            "patternType": "PARAGRAPH",
+            "blocks": 1
+          }
+        }
+      },
+      "featured_projects": {}
+    },
+    "site": {},
+    "about": {}
+  },
+  "slices": {
+    "MainText": {
+      "default": {
+        "primary": {
+          "text": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "LeadText": {
+      "default": {
+        "primary": {
+          "text": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "Carousel": {
+      "default": {
+        "primary": {},
+        "items": {}
+      }
+    },
+    "Announcements": {}
+  }
+}

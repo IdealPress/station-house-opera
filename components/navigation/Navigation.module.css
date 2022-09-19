@@ -1,0 +1,15 @@
+.base {
+  @apply sticky top-0 z-10 w-full;
+}
+
+.nav {
+  @apply bg-black px-6 py-6 flex justify-between;
+}
+
+.list {
+  @apply space-x-6 text-2xl;
+}
+
+.list li {
+  @apply inline-block;
+}
