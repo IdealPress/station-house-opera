@@ -3,11 +3,11 @@
 }
 
 .nav {
-  @apply bg-black px-6 py-6 flex justify-between;
+  @apply bg-black px-6 py-3 sm:py-6 flex flex-col sm:flex-row items-end sm:justify-between space-y-4 sm:space-y-0;
 }
 
 .list {
-  @apply space-x-6 text-2xl;
+  @apply space-x-6 text-lg sm:text-xl md:text-2xl;
 }
 
 .list li {

@@ -1,6 +1,84 @@
 {
   "slices": {
     "components": {
+      "bibliography": {
+        "library": "slices",
+        "id": "bibliography",
+        "name": "Bibliography",
+        "description": "Bibliography",
+        "model": {
+          "id": "bibliography",
+          "type": "SharedSlice",
+          "name": "Bibliography",
+          "description": "Bibliography",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Bibliography",
+              "primary": {},
+              "items": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": ""
+                  }
+                },
+                "source": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Source",
+                    "placeholder": ""
+                  }
+                },
+                "date": {
+                  "type": "Date",
+                  "config": {
+                    "label": "Date",
+                    "placeholder": ""
+                  }
+                },
+                "link": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Link",
+                    "placeholder": "",
+                    "select": null
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "title": "slabs",
+                "source": "vegetable",
+                "date": "2012-03-10",
+                "link": {
+                  "link_type": "Web",
+                  "url": "https://prismic.io"
+                }
+              }
+            ],
+            "primary": {},
+            "slice_type": "bibliography"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
       "carousel": {
         "library": "slices",
         "id": "carousel",
@@ -49,12 +127,250 @@
                   },
                   "alt": null,
                   "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a"
+                  "url": "https://images.unsplash.com/photo-1560457079-9a6532ccb118"
                 }
               }
             ],
             "primary": {},
             "slice_type": "carousel"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
+      "gallery": {
+        "library": "slices",
+        "id": "gallery",
+        "name": "Gallery",
+        "description": "Gallery",
+        "model": {
+          "id": "gallery",
+          "type": "SharedSlice",
+          "name": "Gallery",
+          "description": "Gallery",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Gallery",
+              "primary": {},
+              "items": {
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image",
+                    "constraint": {
+                      "width": null,
+                      "height": null
+                    },
+                    "thumbnails": [
+                      {
+                        "name": "default",
+                        "width": 2500,
+                        "height": 1667
+                      },
+                      {
+                        "name": "square",
+                        "width": 2500,
+                        "height": 2080
+                      },
+                      {
+                        "name": "wide",
+                        "width": 2500,
+                        "height": 1400
+                      }
+                    ]
+                  }
+                },
+                "embed": {
+                  "type": "Embed",
+                  "config": {
+                    "label": "Embed",
+                    "placeholder": ""
+                  }
+                },
+                "description": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "image": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": null,
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+                  "default": {
+                    "dimensions": {
+                      "width": 2500,
+                      "height": 1667
+                    },
+                    "alt": null,
+                    "copyright": null,
+                    "url": "https://images.unsplash.com/photo-1587905069134-008460d7a636"
+                  },
+                  "square": {
+                    "dimensions": {
+                      "width": 2500,
+                      "height": 2080
+                    },
+                    "alt": null,
+                    "copyright": null,
+                    "url": "https://images.unsplash.com/photo-1579931794097-0ad001e51edb"
+                  },
+                  "wide": {
+                    "dimensions": {
+                      "width": 2500,
+                      "height": 1400
+                    },
+                    "alt": null,
+                    "copyright": null,
+                    "url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468"
+                  }
+                },
+                "embed": {
+                  "embed_url": "https://twitter.com/prismicio/status/1356293316158095361",
+                  "author_name": "Prismic",
+                  "author_url": "https://twitter.com/prismicio",
+                  "html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Gatsby is a popular choice for Prismic users and we work hard on delivering a CMS that plays to its strengths.<br><br>But, what makes <a href=\"https://twitter.com/GatsbyJS?ref_src=twsrc%5Etfw\">@GatsbyJS</a> so popular?<br><br>Here are some of <a href=\"https://twitter.com/mxstbr?ref_src=twsrc%5Etfw\">@mxstbr</a>&#39;s thoughts on Gatsby&#39;s success and how they&#39;re improving developer experience.<a href=\"https://t.co/ZjCPvsWWUD\">https://t.co/ZjCPvsWWUD</a> <a href=\"https://t.co/EQqzJpeNKl\">pic.twitter.com/EQqzJpeNKl</a></p>&mdash; Prismic (@prismicio) <a href=\"https://twitter.com/prismicio/status/1356293316158095361?ref_src=twsrc%5Etfw\">February 1, 2021</a></blockquote>\n<script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>\n",
+                  "width": 550,
+                  "height": null,
+                  "type": "rich",
+                  "cache_age": "3153600000",
+                  "provider_name": "Twitter",
+                  "provider_url": "http://www.twitter.com/",
+                  "version": "1.0"
+                },
+                "description": "poetry"
+              }
+            ],
+            "primary": {},
+            "slice_type": "gallery"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
+      "image": {
+        "library": "slices",
+        "id": "image",
+        "name": "Image",
+        "description": "Image",
+        "model": {
+          "id": "image",
+          "type": "SharedSlice",
+          "name": "Image",
+          "description": "Image",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Image",
+              "primary": {
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image",
+                    "constraint": {
+                      "width": null,
+                      "height": null
+                    },
+                    "thumbnails": [
+                      {
+                        "name": "default",
+                        "width": 2500,
+                        "height": 1667
+                      },
+                      {
+                        "name": "square",
+                        "width": 2500,
+                        "height": 2080
+                      },
+                      {
+                        "name": "wide",
+                        "width": 2500,
+                        "height": 1400
+                      }
+                    ]
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "image": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a",
+                "default": {
+                  "dimensions": {
+                    "width": 2500,
+                    "height": 1667
+                  },
+                  "alt": null,
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1547082299-de196ea013d6"
+                },
+                "square": {
+                  "dimensions": {
+                    "width": 2500,
+                    "height": 2080
+                  },
+                  "alt": null,
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a"
+                },
+                "wide": {
+                  "dimensions": {
+                    "width": 2500,
+                    "height": 1400
+                  },
+                  "alt": null,
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2"
+                }
+              }
+            },
+            "slice_type": "image"
           }
         },
         "meta": {
@@ -145,7 +461,7 @@
                     "label": "Text",
                     "placeholder": "Use for main text of a page",
                     "allowTargetBlank": true,
-                    "multi": "paragraph,strong,em,hyperlink,image,o-list-item,list-item"
+                    "multi": "paragraph,strong,em,hyperlink,image,list-item,o-list-item,heading1,heading6"
                   }
                 }
               },
@@ -165,7 +481,7 @@
               "text": [
                 {
                   "type": "paragraph",
-                  "text": "Consequat amet ut aliquip tempor amet.",
+                  "text": "Eiusmod eu in proident excepteur minim Lorem nostrud veniam non ex anim. Eiusmod aute ipsum occaecat et officia occaecat ut labore excepteur velit officia aliquip sit aliqua.",
                   "spans": []
                 }
               ]

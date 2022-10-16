@@ -1,6 +1,13 @@
 {
   "_cts": {
-    "project": {},
+    "project": {
+      "short_description": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    },
     "home": {
       "carousel": {},
       "announcements": {
@@ -14,7 +21,8 @@
       "featured_projects": {}
     },
     "site": {},
-    "about": {}
+    "about": {},
+    "info": {}
   },
   "slices": {
     "MainText": {
@@ -47,6 +55,22 @@
         "items": {}
       }
     },
-    "Announcements": {}
+    "Announcements": {},
+    "Gallery": {
+      "default": {
+        "primary": {},
+        "items": {}
+      }
+    },
+    "Image": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "Bibliography": {
+      "default": {
+        "primary": {}
+      }
+    }
   }
 }

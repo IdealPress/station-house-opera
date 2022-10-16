@@ -1,0 +1,9 @@
+import MyComponent from '../../../../slices/Image';
+
+export default {
+  title: 'slices/Image'
+}
+
+
+export const _Default = () => <MyComponent slice={{"variation":"default","version":"sktwi1xtmkfgx8626","items":[{}],"primary":{"image":{"dimensions":{"width":900,"height":500},"alt":null,"copyright":null,"url":"https://images.unsplash.com/photo-1587653915936-5623ea0b949a","default":{"dimensions":{"width":2500,"height":1667},"alt":null,"copyright":null,"url":"https://images.unsplash.com/photo-1547082299-de196ea013d6"},"square":{"dimensions":{"width":2500,"height":2080},"alt":null,"copyright":null,"url":"https://images.unsplash.com/photo-1551739440-5dd934d3a94a"},"wide":{"dimensions":{"width":2500,"height":1400},"alt":null,"copyright":null,"url":"https://images.unsplash.com/photo-1515378791036-0648a3ef77b2"}}},"slice_type":"image","id":"_Default"}} />
+_Default.storyName = ''

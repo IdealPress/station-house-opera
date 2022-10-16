@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-import { useScrollDirection } from "hooks/useScrollDirection";
+import { useScrollDirection } from "lib/hooks";
 
 import { SVGLogo } from "components";
 
@@ -35,7 +35,7 @@ export default function Navigation() {
           >
             <Link href="/">
               <a>
-                <SVGLogo />
+                <SVGLogo className="w-full sm:w-96 md:w-full" />
               </a>
             </Link>
             <ul className={styles.list}>
@@ -45,7 +45,7 @@ export default function Navigation() {
                 </Link>
               </li>
               <li>
-                <Link href="/abt">
+                <Link href="/about">
                   <a>About</a>
                 </Link>
               </li>

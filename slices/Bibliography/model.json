@@ -1,0 +1,48 @@
+{
+  "id": "bibliography",
+  "type": "SharedSlice",
+  "name": "Bibliography",
+  "description": "Bibliography",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Bibliography",
+      "primary": {},
+      "items": {
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          }
+        },
+        "source": {
+          "type": "Text",
+          "config": {
+            "label": "Source",
+            "placeholder": ""
+          }
+        },
+        "date": {
+          "type": "Date",
+          "config": {
+            "label": "Date",
+            "placeholder": ""
+          }
+        },
+        "link": {
+          "type": "Link",
+          "config": {
+            "label": "Link",
+            "placeholder": "",
+            "select": null
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

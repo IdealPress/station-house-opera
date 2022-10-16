@@ -24,17 +24,110 @@
         "config": {
           "label": "Cover",
           "constraint": {
-            "width": 2500,
-            "height": 1667
+            "width": null,
+            "height": null
           },
-          "thumbnails": []
+          "thumbnails": [
+            {
+              "name": "square",
+              "width": 2500,
+              "height": 2080
+            },
+            {
+              "name": "wide",
+              "width": 2500,
+              "height": 1400
+            },
+            {
+              "name": "default",
+              "width": 2500,
+              "height": 1667
+            }
+          ]
+        }
+      },
+      "short_description": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Short Description",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph"
+        }
+      },
+      "date": {
+        "type": "Date",
+        "config": {
+          "label": "Date",
+          "placeholder": ""
         }
       },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",
         "config": {
-          "choices": {}
+          "choices": {
+            "lead_text": {
+              "type": "SharedSlice"
+            },
+            "gallery": {
+              "type": "SharedSlice"
+            },
+            "image": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "Project": {
+      "slices1": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "main_text": {
+              "type": "SharedSlice"
+            },
+            "image": {
+              "type": "SharedSlice"
+            },
+            "lead_text": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "Credits": {
+      "slices2": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "main_text": {
+              "type": "SharedSlice"
+            },
+            "lead_text": {
+              "type": "SharedSlice"
+            },
+            "image": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "Bibliography": {
+      "slices3": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "bibliography": {
+              "type": "SharedSlice"
+            }
+          }
         }
       }
     }

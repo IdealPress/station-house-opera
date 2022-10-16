@@ -1,6 +1,6 @@
 {
-  "id": "about",
-  "label": "About",
+  "id": "info",
+  "label": "Information",
   "repeatable": true,
   "status": true,
   "json": {
