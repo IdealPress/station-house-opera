@@ -20,7 +20,7 @@ export default function Projects({ content }) {
                       alt={project?.data?.cover?.alt}
                     />
                   </figure>
-                  <p className="text-2xl">{project.data.title}</p>
+                  <p className="text-2xl">{project?.data?.title}</p>
                 </div>
               </a>
             </Link>

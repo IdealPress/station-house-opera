@@ -11,21 +11,21 @@ export default function Project({ content }) {
   return (
     <>
       <SubNavigation
-        left={<p>{content.data?.title}</p>}
+        left={<p>{content?.data?.title}</p>}
         right={
           <ul>
             <li>
-              <Link href={`/projects/${content.uid}/project`}>
+              <Link href={`/projects/${content?.uid}/project`}>
                 <a>Project</a>
               </Link>
             </li>
-            <Link href={`/projects/${content.uid}/credits`}>
+            <Link href={`/projects/${content?.uid}/credits`}>
               <a>Credits</a>
             </Link>
-            <Link href={`/projects/${content.uid}/bibliography`}>
+            <Link href={`/projects/${content?.uid}/bibliography`}>
               <a>Bibliography</a>
             </Link>
-            <Link href={`/projects/${content.uid}`}>
+            <Link href={`/projects/${content?.uid}`}>
               <a>
                 <SVGCross className="text-current inline w-5 h-5" />
               </a>
@@ -35,7 +35,7 @@ export default function Project({ content }) {
       />
       <main className="space-y-12">
         {content?.data?.slices1 && (
-          <SliceZone slices={content.data.slices1} components={components} />
+          <SliceZone slices={content?.data.slices1} components={components} />
         )}
       </main>
     </>

@@ -11,18 +11,18 @@ export default function Project({ content }) {
   return (
     <>
       <SubNavigation
-        left={<p>{content.data?.title}</p>}
+        left={<p>{content?.data?.title}</p>}
         right={
           <ul>
             <li>
-              <Link href={`/projects/${content.uid}/project`}>
+              <Link href={`/projects/${content?.uid}/project`}>
                 <a>Project</a>
               </Link>
             </li>
-            <Link href={`/projects/${content.uid}/credits`}>
+            <Link href={`/projects/${content?.uid}/credits`}>
               <a>Credits</a>
             </Link>
-            <Link href={`/projects/${content.uid}/bibliography`}>
+            <Link href={`/projects/${content?.uid}/bibliography`}>
               <a>Bibliography</a>
             </Link>
           </ul>
@@ -30,7 +30,7 @@ export default function Project({ content }) {
       />
       <main className="space-y-12">
         {content?.data?.slices3 && (
-          <SliceZone slices={content.data.slices3} components={components} />
+          <SliceZone slices={content?.data.slices3} components={components} />
         )}
       </main>
     </>
