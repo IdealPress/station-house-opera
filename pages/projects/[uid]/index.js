@@ -41,16 +41,16 @@ export default function Project({ content }) {
     <>
       {showLightbox && <Lightbox />}
       <SubNavigation
-        left={<p>{content.data?.title}</p>}
+        left={<p>{content?.data?.title}</p>}
         right={
-          <Link href={`/projects/${content.uid}/project`}>
+          <Link href={`/projects/${content?.uid}/project`}>
             <a>Information</a>
           </Link>
         }
       />
       <main className="space-y-12">
         {content?.data?.slices && (
-          <SliceZone slices={content.data.slices} components={components} />
+          <SliceZone slices={content?.data?.slices} components={components} />
         )}
       </main>
     </>
