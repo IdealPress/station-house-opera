@@ -11,7 +11,7 @@ export default function Project({ content }) {
   return (
     <>
       <SubNavigation
-        left={<p>{content?.data?.title}</p>}
+        left={<Link href={`/projects/${content?.uid}`}><a>{content?.data?.title}</a></Link>}
         right={
           <ul>
             <li>

@@ -5,13 +5,13 @@ import { SliceZone } from "@prismicio/react";
 import { createClient, linkResolver } from "prismicio";
 import { components } from "slices";
 
-import { BaseLayout, SubNavigation } from "components";
+import { BaseLayout, SubNavigation, SVGCross } from "components";
 
 export default function Project({ content }) {
   return (
     <>
       <SubNavigation
-        left={<p>{content?.data?.title}</p>}
+        left={<Link href={`/projects/${content?.uid}`}><a>{content?.data?.title}</a></Link>}
         right={
           <ul>
             <li>
@@ -24,6 +24,11 @@ export default function Project({ content }) {
             </Link>
             <Link href={`/projects/${content?.uid}/bibliography`}>
               <a>Bibliography</a>
+            </Link>
+            <Link href={`/projects/${content?.uid}`}>
+              <a>
+                <SVGCross className="text-current inline w-5 h-5" />
+              </a>
             </Link>
           </ul>
         }

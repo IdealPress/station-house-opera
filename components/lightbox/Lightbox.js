@@ -13,7 +13,7 @@ export default function Lightbox() {
 
   return (
     <div className="fixed z-10 top-0 w-screen min-h-screen bg-black">
-      <div className="flex justify-between p-6 bg-black sticky top-0 z-30 ">
+      <div className="flex justify-between items-center px-6 bg-black fixed top-0 w-full z-30 h-20">
         {currentItem?.$description && <p>{currentItem?.$description}</p>}
         <div className="flex">
           <button onClick={prevItem}>
@@ -27,11 +27,11 @@ export default function Lightbox() {
           </button>
         </div>
       </div>
-      <div className="">
+      <div className="mt-20">
         {lightboxHasItems && (
           <>
             {currentItem?.$type === "image" ? (
-              <div className="w-full h-screen flex items-center -mt-16 justify-center">
+              <div className="w-full h-screen flex items-center justify-center">
                 <Image
                   src={currentItem?.url}
                   alt={currentItem?.alt}
