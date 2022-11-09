@@ -1,0 +1,4 @@
+.base {
+  @apply text-2xl sm:text-3xl md:text-4xl w-full;
+  line-height: 130%;
+}

@@ -2,8 +2,8 @@ export default function SVGLogo({ className }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="500"
-      height="36.709"
+      width="1000"
+      height="50"
       viewBox="0 0 500 36.709"
       className={className}
     >

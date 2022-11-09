@@ -41,7 +41,11 @@ export default function Project({ content }) {
     <>
       {showLightbox && <Lightbox />}
       <SubNavigation
-        left={<p>{content?.data?.title}</p>}
+        left={
+          <p className="text-3xl">
+            {content?.data?.title}
+          </p>
+        }
         right={
           <Link href={`/projects/${content?.uid}/project`}>
             <a>Information</a>

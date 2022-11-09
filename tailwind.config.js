@@ -30,6 +30,23 @@ module.exports = {
             },
           },
         },
+        lg: {
+          css: {
+            color: theme("colors.white"),
+            fontSize: "1.4rem",
+            h1: {
+              color: theme("colors.white"),
+              fontWeight: "normal",
+              fontSize: "1.3em !important",
+              margin: "2.5rem 0rem 1.5rem !important",
+            },
+            h6: {
+              color: theme("colors.white"),
+              fontSize: "1rem",
+              margin: "0.5rem 0rem -1.25rem !important",
+            },
+          }
+        }
       }),
     },
   },

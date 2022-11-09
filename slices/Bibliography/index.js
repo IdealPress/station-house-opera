@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import { PrismicRichText } from "@prismicio/react";
 
 var options = {
   year: "numeric",
@@ -9,7 +8,7 @@ var options = {
 };
 
 const Bibliography = ({ slice }) => (
-  <section className="grid md:grid-cols-2 gap-12 p-6">
+  <section className="grid md:grid-cols-2 gap-12 p-6 lg:px-12">
     {slice.items?.map((item, index) => (
       <Link key={index} href={item.link.url}>
         <a className="block space-y-3">

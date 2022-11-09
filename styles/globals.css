@@ -7,3 +7,8 @@
     src: url("/Gineto-Regular.otf");
   }
   
+@layer utilities {
+  .rtl {
+    direction: rtl;
+  }
+}

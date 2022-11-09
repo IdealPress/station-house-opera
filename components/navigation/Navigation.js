@@ -35,13 +35,15 @@ export default function Navigation() {
           >
             <Link href="/">
               <a>
-                <SVGLogo className="w-full sm:w-96 md:w-full" />
+                <SVGLogo className="w-full sm:w-96 md:w-[500px]" />
               </a>
             </Link>
             <ul className={styles.list}>
               <li>
                 <Link href="/projects">
-                  <a>Projects</a>
+                  <a>
+                    Projects
+                  </a>
                 </Link>
               </li>
               <li>

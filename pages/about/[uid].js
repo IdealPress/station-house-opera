@@ -50,7 +50,12 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params, previewData }) {
   const client = createClient({ previewData });
   const content = await client.getByUID("info", params.uid);
-  const pages = await client.getByType("info");
+  const pages = await client.getByType("info", {
+    orderings: {
+      field: 'my.info.uid',
+      direction: 'asc',
+    }
+  })
   return {
     props: { content, pages: pages.results },
   };

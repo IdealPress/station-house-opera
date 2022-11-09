@@ -64,7 +64,7 @@ export default function Home({ content }) {
           {content?.data?.announcements?.map((announcement, index) => (
             <div
               key={index}
-              className="w-2/5 inline-block whitespace-normal space-y-2 h-full align-top"
+              className="w-4/5 lg:w-2/5 inline-block whitespace-normal space-y-2 h-full align-top"
             >
               <p className="text-2xl">{announcement.title}</p>
               <p className="text-sm">{announcement.date}</p>
@@ -83,7 +83,7 @@ export default function Home({ content }) {
           ))}
         </ScrollContainer>
       </section>
-      <section className="p-8">
+      <section className="px-4 py-8 lg:p-8">
         <div className="lg:columns-2">
           {/* Reorder array for CSS Columns */}
           {content?.data?.featured_projects

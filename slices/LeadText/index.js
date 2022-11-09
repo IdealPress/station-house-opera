@@ -1,9 +1,11 @@
 import React from "react";
 import { PrismicRichText } from "@prismicio/react";
 
+import styles from "./LeadText.module.css"
+
 const LeadText = ({ slice }) => (
-  <section className="px-6">
-    <div className="text-2xl sm:text-3xl md:text-4xl w-full md:w-4/5 leading-snug">
+  <section className="px-6 lg:px-12">
+    <div className={styles.base}>
       {slice.primary.text && <PrismicRichText field={slice.primary.text} />}
     </div>
   </section>

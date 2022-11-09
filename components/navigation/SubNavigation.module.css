@@ -1,11 +1,12 @@
 .base {
-  @apply bg-black sm:bg-none px-6 flex flex-col sm:flex-row sticky sm:relative top-0 p-6 sm:pt-0 justify-between pb-6 sm:text-lg items-end space-y-2 sm:space-y-0;
+  @apply bg-black sm:bg-none lg:px-12 flex flex-col sm:flex-row sticky sm:relative top-0 px-6 pb-6 mb-2 justify-between sm:text-lg items-end space-y-2 sm:space-y-0;
 }
 
 .base ul {
   @apply space-x-6;
 }
 
-.base li {
-  @apply inline-block;
+.base li,
+.base a {
+  @apply inline-block transition hover:-rotate-6;
 }

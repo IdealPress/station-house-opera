@@ -6,12 +6,12 @@ import { createClient } from "prismicio";
 export default function Projects({ content }) {
   return (
     <>
-      <main className="space-y-12 px-6">
+      <main className="space-y-12 px-6 lg:px-12">
         <section className="grid sm:grid-cols-2 md:grid-cols-3 gap-12">
           {content.map((project, index) => (
             <Link href={`/projects/${project.uid}`} key={index}>
               <a>
-                <div className="w-full h-full space-y-2">
+                <div className="w-full h-full space-y-2 relative group">
                   <figure className="aspect-[3/2]">
                     <Image
                       src={project?.data?.cover?.url}
@@ -20,7 +20,9 @@ export default function Projects({ content }) {
                       alt={project?.data?.cover?.alt}
                     />
                   </figure>
-                  <p className="text-2xl">{project?.data?.title}</p>
+                  <figcaption>
+                    <span className="text-2xl transition-all">{project?.data?.title}</span>
+                  </figcaption>
                 </div>
               </a>
             </Link>
