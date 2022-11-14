@@ -28,6 +28,9 @@ module.exports = {
               fontSize: "0.9rem",
               margin: "0.5rem 0rem -0.5rem !important",
             },
+            strong: {
+              color: theme("colors.white"),
+            }
           },
         },
         lg: {
@@ -45,6 +48,9 @@ module.exports = {
               fontSize: "1rem",
               margin: "0.5rem 0rem -1.25rem !important",
             },
+            strong: {
+              color: theme("colors.white"),
+            }
           }
         }
       }),

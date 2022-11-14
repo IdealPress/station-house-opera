@@ -16,7 +16,9 @@ export default function BaseLayout({ children }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navigation />
-      {children}
+      <div className="min-h-screen">
+        {children}
+      </div>
       <Footer />
     </div>
   );
