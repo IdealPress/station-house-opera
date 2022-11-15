@@ -40,7 +40,12 @@ About.getLayout = function getLayout(page) {
 export async function getStaticProps({ previewData }) {
   const client = createClient({ previewData });
   const content = await client.getByUID("info", "about");
-  const pages = await client.getByType("info");
+  const pages = await client.getByType("info", {
+    orderings: {
+      field: 'my.info.uid',
+      direction: 'asc',
+    }
+  })
   return {
     props: { content, pages: pages.results },
   };
