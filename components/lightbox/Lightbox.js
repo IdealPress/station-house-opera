@@ -12,7 +12,7 @@ export default function Lightbox() {
     useLightbox();
 
   return (
-    <div className="fixed z-10 top-0 w-screen min-h-screen bg-black">
+    <div className="fixed z-30 top-0 w-screen min-h-screen bg-black">
       <div className="flex justify-between items-center px-6 bg-black fixed top-0 w-full z-30 h-20">
         {currentItem?.$description && <p>{currentItem?.$description}</p>}
         <div className="flex">
