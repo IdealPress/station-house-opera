@@ -1,5 +1,5 @@
 .base {
-  @apply sticky top-0 z-10 w-full;
+  @apply sticky top-0 z-20 w-full;
 }
 
 .nav {

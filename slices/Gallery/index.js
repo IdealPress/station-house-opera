@@ -8,7 +8,7 @@ const Gallery = ({ slice }) => {
   const { selectItem, showLightbox } = useLightbox();
 
   return (
-    <section className="grid grid-cols-2 gap-12 px-6 lg:px-12 w-full">
+    <section className="grid md:grid-cols-2 gap-12 px-6 lg:px-12 w-full">
       {slice.items?.map((item, index) => (
         <div
           key={index}
