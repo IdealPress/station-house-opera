@@ -3,7 +3,7 @@ import { PrismicRichText } from "@prismicio/react";
 
 const MainText = ({ slice }) => (
   <section className="px-6">
-    <div className="prose prose-lg mx-auto">
+    <div className="prose prose-lg mx-auto leading-snug">
       {slice.primary.text && <PrismicRichText field={slice.primary.text} />}
     </div>
   </section>
