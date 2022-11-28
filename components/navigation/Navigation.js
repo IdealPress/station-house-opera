@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useRouter } from "next/router";
 
 import { useScrollDirection } from "lib/hooks";
 
@@ -11,10 +12,12 @@ import Link from "next/link";
 export default function Navigation() {
   const scrollDirection = useScrollDirection();
   const [showNavigation, setShowNavigation] = useState(true);
+  const router = useRouter();
 
   useEffect(() => {
     setShowNavigation(scrollDirection !== "down");
   }, [scrollDirection]);
+
 
   return (
     <div className={styles.base}>
@@ -35,18 +38,18 @@ export default function Navigation() {
           >
             <Link href="/">
               <a>
-                <SVGLogo className="w-full sm:w-96 md:w-[500px]" />
+                <SVGLogo className="w-full sm:w-96 md:w-[450px]" />
               </a>
             </Link>
             <ul className={styles.list}>
-              <li>
+              <li className={router.pathname.includes("project") && "active-link"}>
                 <Link href="/projects">
                   <a>
                     Projects
                   </a>
                 </Link>
               </li>
-              <li>
+              <li className={router.pathname.includes("about") && "active-link"}>
                 <Link href="/about">
                   <a>About</a>
                 </Link>

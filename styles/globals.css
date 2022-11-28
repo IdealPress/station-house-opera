@@ -11,4 +11,9 @@
   .rtl {
     direction: rtl;
   }
+
+  .active-link {
+    @apply text-gray-sho !important;
+  }
+  
 }

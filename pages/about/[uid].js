@@ -1,6 +1,7 @@
 import Link from "next/link";
 import * as prismicH from "@prismicio/helpers";
 import { SliceZone } from "@prismicio/react";
+import { useRouter } from "next/router";
 
 import { createClient, linkResolver } from "prismicio";
 import { components } from "slices";
@@ -12,17 +13,20 @@ const hrefResolver = (uid) => {
 };
 
 export default function About({ content, pages }) {
+  const router = useRouter()
   return (
     <>
       <SubNavigation
         right={
           <ul>
             {pages.map((page, index) => (
-              <Link key={index} href={hrefResolver(page.uid)}>
-                <a>
-                  <li>{page?.data?.title}</li>
-                </a>
-              </Link>
+              <li className={router.query.uid === page.uid && "active-link"} key={index}>
+                <Link href={hrefResolver(page.uid)}>
+                  <a>
+                      {page?.data?.title}
+                  </a>
+                </Link>
+              </li>
             ))}
           </ul>
         }

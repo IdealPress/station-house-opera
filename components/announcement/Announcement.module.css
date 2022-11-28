@@ -1,0 +1,3 @@
+.base {
+  @apply ml-8 sm:ml-0 w-4/5 lg:w-2/5 inline-block whitespace-normal space-y-2 h-full align-top;
+}

@@ -79,68 +79,6 @@
         },
         "screenshotPaths": {}
       },
-      "carousel": {
-        "library": "slices",
-        "id": "carousel",
-        "name": "Carousel",
-        "description": "Carousel",
-        "model": {
-          "id": "carousel",
-          "type": "SharedSlice",
-          "name": "Carousel",
-          "description": "Carousel",
-          "variations": [
-            {
-              "id": "default",
-              "name": "Default",
-              "docURL": "...",
-              "version": "sktwi1xtmkfgx8626",
-              "description": "Carousel",
-              "primary": {},
-              "items": {
-                "image": {
-                  "type": "Image",
-                  "config": {
-                    "label": "Image",
-                    "constraint": {
-                      "width": 2500,
-                      "height": 1406
-                    },
-                    "thumbnails": []
-                  }
-                }
-              },
-              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
-            }
-          ]
-        },
-        "mocks": {
-          "default": {
-            "variation": "default",
-            "version": "sktwi1xtmkfgx8626",
-            "items": [
-              {
-                "image": {
-                  "dimensions": {
-                    "width": 2500,
-                    "height": 1406
-                  },
-                  "alt": null,
-                  "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1560457079-9a6532ccb118"
-                }
-              }
-            ],
-            "primary": {},
-            "slice_type": "carousel"
-          }
-        },
-        "meta": {
-          "fileName": "index",
-          "extension": "js"
-        },
-        "screenshotPaths": {}
-      },
       "gallery": {
         "library": "slices",
         "id": "gallery",

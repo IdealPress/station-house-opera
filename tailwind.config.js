@@ -12,6 +12,11 @@ module.exports = {
       fontFamily: {
         sans: ["Gineto Regular", ...defaultTheme.fontFamily.sans],
       },
+      colors: {
+        gray: {
+          sho: "#7B7B7B"
+        },
+      },
       typography: (theme) => ({
         DEFAULT: {
           css: {
@@ -29,6 +34,9 @@ module.exports = {
               margin: "0.5rem 0rem -0.5rem !important",
             },
             strong: {
+              color: theme("colors.white"),
+            },
+            a: {
               color: theme("colors.white"),
             }
           },
@@ -49,6 +57,9 @@ module.exports = {
               margin: "0.5rem 0rem -1.25rem !important",
             },
             strong: {
+              color: theme("colors.white"),
+            },
+            a: {
               color: theme("colors.white"),
             }
           }

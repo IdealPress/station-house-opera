@@ -3,7 +3,7 @@
 }
 
 .nav {
-  @apply bg-black px-6 py-3 sm:py-6 lg:px-12 lg:py-8 flex flex-col sm:flex-row items-end sm:items-center sm:justify-between space-y-4 sm:space-y-0;
+  @apply bg-black px-6 py-3 sm:py-6 lg:px-12 lg:py-8 flex flex-col sm:flex-row items-center sm:justify-between space-y-4 sm:space-y-0;
 }
 
 .list {
@@ -11,5 +11,5 @@
 }
 
 .list li {
-  @apply inline-block transition hover:-rotate-12;
+  @apply inline-block transition-colors hover:text-gray-sho;
 }

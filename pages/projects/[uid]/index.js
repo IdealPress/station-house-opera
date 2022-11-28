@@ -42,14 +42,16 @@ export default function Project({ content }) {
       {showLightbox && <Lightbox />}
       <SubNavigation
         left={
-          <p className="text-3xl">
+          <p className="text-2xl">
             {content?.data?.title}
           </p>
         }
         right={
-          <Link href={`/projects/${content?.uid}/project`}>
-            <a>Information</a>
-          </Link>
+          <p>
+            <Link href={`/projects/${content?.uid}/information`}>
+              <a>Information</a>
+            </Link>
+          </p>
         }
       />
       <main className="space-y-12">
@@ -62,7 +64,7 @@ export default function Project({ content }) {
 }
 
 Project.getLayout = function getLayout(page) {
-  return <BaseLayout>{page}</BaseLayout>;
+  return <BaseLayout content={page.props.content}>{page}</BaseLayout>;
 };
 
 export async function getStaticPaths() {

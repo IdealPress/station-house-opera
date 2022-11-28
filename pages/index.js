@@ -1,13 +1,13 @@
 import { useRef, useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { PrismicRichText } from "@prismicio/react";
+import { PrismicLink, PrismicRichText } from "@prismicio/react";
 import { ScrollContainer } from "react-indiana-drag-scroll";
 import "react-indiana-drag-scroll/dist/style.css";
 
 import { createClient } from "prismicio";
 
-import { BaseLayout } from "components";
+import { Announcement, BaseLayout } from "components";
 import { AnimatePresence, motion } from "framer-motion";
 
 export default function Home({ content }) {
@@ -38,7 +38,7 @@ export default function Home({ content }) {
 
   return (
     <main>
-      <section className="min-h-screen">
+      <section className="min-h-screen relative">
         <AnimatePresence initial={false}>
           <motion.div
             key={carouselIndex}
@@ -59,27 +59,18 @@ export default function Home({ content }) {
         </AnimatePresence>
       </section>
 
-      <section className="p-8">
+      <section className="py-8 sm:p-8">
         <ScrollContainer className="overflow-y-scroll whitespace-nowrap py-12 space-x-12">
           {content?.data?.announcements?.map((announcement, index) => (
-            <div
-              key={index}
-              className="w-4/5 lg:w-2/5 inline-block whitespace-normal space-y-2 h-full align-top"
-            >
-              <p className="text-2xl">{announcement.title}</p>
-              <p className="text-sm">{announcement.date}</p>
-              <PrismicRichText field={announcement.text} />
-              {announcement.image?.url && (
-                <div className="grayscale pt-8 w-2/3 mx-auto">
-                  <Image
-                    src={announcement.image.url}
-                    width={announcement.image.dimensions.width}
-                    height={announcement.image.dimensions.height}
-                    alt={announcement.image.alt}
-                  />
-                </div>
+            <> 
+              {announcement.link.url ? (
+                <PrismicLink field={announcement.link} key={index}>
+                  <Announcement announcement={announcement} />
+                </PrismicLink> 
+              ) : (
+                <Announcement announcement={announcement} key={index} />
               )}
-            </div>
+            </>
           ))}
         </ScrollContainer>
       </section>

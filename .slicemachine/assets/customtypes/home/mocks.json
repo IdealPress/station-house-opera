@@ -20,18 +20,17 @@
           },
           "alt": null,
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68"
+          "url": "https://images.unsplash.com/photo-1586952518485-11b180e92764"
         }
       }
     ],
     "announcements": [
       {
-        "title": "consider",
-        "date": "saved",
+        "date": "atom",
         "text": [
           {
             "type": "paragraph",
-            "text": "Amet eiusmod et eu ullamco. Consequat nulla cillum nisi aute elit Lorem fugiat culpa cupidatat. Eu ipsum culpa non voluptate irure nulla.",
+            "text": "Mollit ut velit aliquip excepteur culpa laborum.",
             "spans": []
           }
         ],
@@ -42,7 +41,11 @@
           },
           "alt": null,
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1586952518485-11b180e92764"
+          "url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f"
+        },
+        "link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
         }
       }
     ],

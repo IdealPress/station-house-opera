@@ -16,3 +16,6 @@ export { default as Lightbox } from "components/lightbox/Lightbox.js";
 
 // Footer
 export { default as Footer } from "components/footer/Footer.js";
+
+// Announcement
+export { default as Announcement } from "components/announcement/Announcement.js";
