@@ -26,6 +26,7 @@
     ],
     "announcements": [
       {
+        "title": "article",
         "date": "atom",
         "text": [
           {
