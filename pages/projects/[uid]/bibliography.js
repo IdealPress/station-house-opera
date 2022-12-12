@@ -5,7 +5,7 @@ import { SliceZone } from "@prismicio/react";
 import { createClient, linkResolver } from "prismicio";
 import { components } from "slices";
 
-import { BaseLayout, SubNavigation, SVGCross } from "components";
+import { BaseLayout, SubNavigation, SVGArrowBack } from "components";
 
 export default function Project({ content }) {
   return (
@@ -31,7 +31,7 @@ export default function Project({ content }) {
             </Link>
             <Link href={`/projects/${content?.uid}`}>
               <a>
-                <SVGCross className="text-current inline w-5 h-5" />
+                <SVGArrowBack className="text-current inline w-5 h-5" />
               </a>
             </Link>
           </ul>

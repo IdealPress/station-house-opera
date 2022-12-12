@@ -6,6 +6,7 @@ export { default as SVGLogo } from "components/svg/Logo.js";
 export { default as SVGCross } from "components/svg/Cross.js";
 export { default as SVGArrowRight } from "components/svg/ArrowRight.js";
 export { default as SVGArrowLeft } from "components/svg/ArrowLeft.js";
+export { default as SVGArrowBack } from "components/svg/BackArrow.js";
 
 // Navigation
 export { default as Navigation } from "components/navigation/Navigation.js";

@@ -13,7 +13,7 @@ export default function BaseLayout({ children }) {
           name="description"
           content="Station House Opera website description"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/sho_favicon.jpg" />
       </Head>
       <Navigation />
       <div className="min-h-screen">

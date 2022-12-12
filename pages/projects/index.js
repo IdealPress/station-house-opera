@@ -21,7 +21,7 @@ export default function Projects({ content }) {
                     />
                   </figure>
                   <figcaption>
-                    <span className="text-2xl transition-all">{project?.data?.title}</span>
+                    <span className="text-2xl transition-colors group-hover:text-gray-sho">{project?.data?.title}</span>
                   </figcaption>
                 </div>
               </a>

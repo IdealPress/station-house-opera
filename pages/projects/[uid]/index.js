@@ -21,12 +21,12 @@ export default function Project({ content }) {
               item.image.url
                 ? {
                     $type: "image",
-                    $description: item.description,
+                    $description: item.description || "",
                     ...item.image,
                   }
                 : {
                     $type: "embed",
-                    $description: item.description,
+                    $description: item.description || "",
                     ...item.embed,
                   }
             );

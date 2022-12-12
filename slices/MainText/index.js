@@ -21,7 +21,7 @@ const MainText = ({ slice }) => (
               )
         
               return (
-                <p key={key} className="w-11/12 mx-auto">
+                <p key={key} className="sm:w-11/12 lg:w-10/12 mx-auto">
                   {node.linkTo ? (
                     <PrismicLink
                       linkResolver={args.linkResolver}

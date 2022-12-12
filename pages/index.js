@@ -90,7 +90,7 @@ export default function Home({ content }) {
                 : featured.project?.data?.cover?.wide;
               return (
                 <Link href={`/projects/${featured.project.uid}`} key={index}>
-                  <a className="block break-inside-avoid p-4">
+                  <a className="block break-inside-avoid p-4 group">
                     <figure
                       className={
                         squareAspectRatio ? "aspect-[6/5]" : "aspect[16/9]"
@@ -104,7 +104,7 @@ export default function Home({ content }) {
                       />
                     </figure>
                     <div className="py-4 space-y-2 lg:w-4/5 xl:w-2/3">
-                      <p className="text-2xl">
+                      <p className="text-2xl transition-colors group-hover:text-gray-sho">
                         {featured.project?.data?.title}
                       </p>
                       <PrismicRichText

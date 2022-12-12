@@ -23,13 +23,17 @@ const Gallery = ({ slice }) => {
               alt={item.image.dimensions.alt}
             />
           ) : (
-            <Vimeo
-              video={item.embed.embed_url}
-              responsive
-              dnt={true}
-              autoplay={true}
-              muted={true}
-            />
+            <>
+            {item.embed.embed_url &&
+              <Vimeo
+                video={item.embed.embed_url}
+                responsive
+                dnt={true}
+                autoplay={true}
+                muted={true}
+              />
+            }
+            </>
           )}
         </div>
       ))}
