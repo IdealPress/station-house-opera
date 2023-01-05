@@ -1,13 +1,13 @@
 .base {
-  @apply bg-black pt-6 sm:pt-0 lg:px-12 flex flex-col relative top-0 px-6 pb-6 mb-2 items-center sm:text-lg space-y-2;
+  @apply bg-black pt-6 sm:pt-0 lg:px-12 flex flex-col relative top-0 px-6 pb-6 mb-2 items-center sm:text-lg space-y-4;
   /* @apply bg-black sm:bg-none pt-6 sm:pt-0 lg:px-12 flex flex-col sm:flex-row sticky sm:relative top-0 px-6 pb-6 mb-2 justify-between sm:text-lg items-end space-y-2 sm:space-y-0 z-10; */
 }
 
 .base ul {
-  @apply space-x-6;
+  @apply space-x-6 text-center;
 }
 
 .base li,
 .base a { 
-  @apply inline-block;
+  @apply inline-block hover:text-gray-sho transition-colors;
 }

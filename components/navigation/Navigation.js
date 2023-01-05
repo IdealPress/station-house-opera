@@ -38,7 +38,7 @@ export default function Navigation() {
           >
             <Link href="/">
               <a>
-                <SVGLogo className="w-full sm:w-96 md:w-[450px]" />
+                <SVGLogo className="w-full max-w-lg sm:w-96 md:w-[450px]" />
               </a>
             </Link>
             <ul className={styles.list}>

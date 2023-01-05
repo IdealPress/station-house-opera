@@ -4,14 +4,17 @@ import Link from "next/link";
 import { PrismicLink, PrismicRichText } from "@prismicio/react";
 import { ScrollContainer } from "react-indiana-drag-scroll";
 import "react-indiana-drag-scroll/dist/style.css";
+import { AnimatePresence, motion } from "framer-motion";
 
 import { createClient } from "prismicio";
 
+import { useWindowSize } from "lib/hooks";
 import { Announcement, BaseLayout } from "components";
-import { AnimatePresence, motion } from "framer-motion";
 
 export default function Home({ content }) {
   const [carouselIndex, setCarouselIndex] = useState(0);
+
+  const size = useWindowSize();
 
   const timeoutRef = useRef(null);
 
@@ -38,21 +41,23 @@ export default function Home({ content }) {
 
   return (
     <main>
-      <section className="min-h-screen relative">
-        <AnimatePresence initial={false}>
+      <section className="sm:min-h-screen relative">
+        <AnimatePresence initial={false} mode="wait">
           <motion.div
             key={carouselIndex}
             className="h-full w-screen bg-cover bg-no-repeat"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 1 }}
           >
             <Image
               src={content?.data?.carousel[carouselIndex].image.url}
               alt={content?.data?.carousel[carouselIndex].image.alt}
-              layout="fill"
-              objectFit="cover"
+              width={content?.data?.carousel[carouselIndex].image.dimensions.width}
+              height={content?.data?.carousel[carouselIndex].image.dimensions.height}
+              layout={size.width < 640 ? "" : "fill"}
+              objectFit={size.width < 640 ? "fill" : "cover"}
               objectPosition="center"
             />
           </motion.div>

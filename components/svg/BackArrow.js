@@ -11,7 +11,7 @@ export default function BackArrow({ className }) {
         d="M-4672-5045.252l-12.919,12.919,12.919,12.919" 
         transform="translate(4686.687 5046.136)" 
         fill="none" 
-        strokeWidth="2"
+        strokeWidth="3"
         className="stroke-current"
       />
     </svg>

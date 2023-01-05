@@ -44,7 +44,7 @@ module.exports = {
         lg: {
           css: {
             color: theme("colors.white"),
-            fontSize: "1.4rem",
+            fontSize: "1.2rem",
             h1: {
               color: theme("colors.white"),
               fontWeight: "normal",

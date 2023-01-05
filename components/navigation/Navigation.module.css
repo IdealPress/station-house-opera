@@ -3,7 +3,7 @@
 }
 
 .nav {
-  @apply bg-black px-6 py-3 sm:py-6 lg:px-12 lg:py-4 flex flex-col sm:flex-row items-center sm:justify-between space-y-4 sm:space-y-0;
+  @apply bg-black px-6 pt-3 pb-4 sm:py-6 lg:px-12 lg:py-4 flex flex-col sm:flex-row items-center sm:justify-between space-y-2 sm:space-y-0;
 }
 
 .list {

@@ -31,7 +31,7 @@ export default function Project({ content }) {
             </Link>
             <Link href={`/projects/${content?.uid}`}>
               <a>
-                <SVGArrowBack className="text-current inline w-5 h-5" />
+                <SVGArrowBack className="text-current inline h-4 -mt-0.5" />
               </a>
             </Link>
           </ul>
