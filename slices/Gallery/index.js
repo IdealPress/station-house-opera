@@ -13,14 +13,14 @@ const Gallery = ({ slice }) => {
         <div
           key={index}
           onClick={() => selectItem(index)}
-          className="cursor-pointer"
+          className="cursor-pointer flex items-center"
         >
           {item.image.url ? (
             <Image
-              src={item.image.url}
-              width={item.image.dimensions.width}
-              height={item.image.dimensions.height}
-              alt={item.image.dimensions.alt}
+              src={item.image[item.dimensions]?.url || item.image.default.url}
+              width={item.image[item.dimensions]?.dimensions.width || item.image.default.dimensions.width}
+              height={item.image[item.dimensions]?.dimensions.height || item.image.default.dimensions.height}
+              alt={item.image.alt}
             />
           ) : (
             <>
