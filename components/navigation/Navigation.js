@@ -42,14 +42,14 @@ export default function Navigation() {
               </a>
             </Link>
             <ul className={styles.list}>
-              <li className={router.pathname.includes("project") && "active-link"}>
+              <li className={router.pathname.includes("project") ? "active-link" : undefined}>
                 <Link href="/projects">
                   <a>
                     Projects
                   </a>
                 </Link>
               </li>
-              <li className={router.pathname.includes("about") && "active-link"}>
+              <li className={router.pathname.includes("about") ? "active-link" : undefined}>
                 <Link href="/about">
                   <a>About</a>
                 </Link>
